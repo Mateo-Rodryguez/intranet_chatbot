@@ -1,0 +1,256 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - very well
+  
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: account_locked
+  examples: |
+    - My account is locked
+    - I can't log in, says my account is locked.
+    - Is my account locked out?
+    - I cant sign in to my windows profile
+    - My windows is locked
+
+- intent: internet_not_working
+  examples: |
+    - I don't have internet
+    - i dont have internet
+    - website is not loading
+    - I dont have wifi
+    - I don't have WiFi
+
+- intent: internet_not_working_alternative
+  examples: | 
+    - I still don't have internet
+    - It doesnt work
+    - it still not working
+
+- intent: affirm
+  examples: |
+    - yes 
+    - okay
+    - i will do that now
+    - sure
+    - on it
+    - lets do it
+
+- intent: not_working
+  examples: |
+    - it is not working
+    - it doesn't work
+    - it is not functioning
+    - it doesnt work
+    - it isn't functioning
+    - it isnt functioning
+
+- intent: deny
+  examples: |
+    - no
+    - never mind
+    - not right now
+    - i dont wanna do it anymore
+    - i changed my mind
+
+- intent: nothing 
+  examples: |
+    - nothing
+    - its not doing anything
+    - it hasnt changed
+    - [problem] is not fixed
+- intent: connect_to_wifi
+  examples: |
+    - how do i connect to the wifi
+    - how do i connect to the TMUK wifi
+    - I need wifi
+    - I need internet on my phone
+- intent: how_to_open_timesheet
+  examples: |
+    - where do i find the timesheet software
+    - i dont know how to do my hours
+    - how do i open the timesheet software
+    - what is the timesheet software
+
+- intent: teamviewer_cannot_connect
+  examples: |
+    - teamviewer says I am offline. 
+    - teamviewer has timed out.
+    - teamviewer says I'm offline but I am connected to the internet
+    - I can't remote to my machine
+- intent: teamviewer_cannot_signin
+  examples: |
+    - i cant sign in to my teamviewer account. 
+    - i am typing my password but cant sign into my teamviewer
+    - i have forgot my teamviewer password
+    - what is my teamviewer password
+    - how do i sign into my teamviewer
+- intent: teamviewer_wrong_password
+  examples: | 
+    - i tried Hello123456 but still cant sign in
+    - i forgot my teamviewer password.
+    - i tried the password Hello123456 but it's not working
+    - my teamviewer password is wrong.
+- intent: thanks
+  examples: |
+    - thanks 
+    - thank you 
+    - cheers
+    - ok
+    - right
+    - alright
+    - thank you very much 
+    - thanks so much 
+    - thanks a lot
+- intent: teamviewer_is_starting_please_wait
+  examples: |
+    - my teamviewer says it's starting but nothing loads
+    - my teamviewer is not loading
+    - my teamviewer isn't coming up
+    - teamviewer is not opening 
+    - teamviewer is loading forever
+    - teamviewer says is not ready to connect all the time
+    - im connected to the internet but teamviewer is not loading
+    - teamviewer says teamviewer is starting please wait
+    - teamviewer says please wait
+    - teamviewer says teamviewer is starting
+
+- intent: website_is_blocked
+  examples: |
+    - im connected to the internet but the website doesn't load
+    - website is stuck
+    - website is blank
+    - website is not coming up
+    - This site can't be reached
+    - can't reach this page
+    - website not working
+    - website is blocked
+
+- intent: explain_firewall
+  examples: | 
+    - firewall
+    - what is a firewall
+    - could it be the firewall
+    - probably the firewall
+
+- intent: explain_browser_security
+  examples: |
+    - explain browser one
+    - explain browser security
+    - what do you mean by browser security
+    - browser
+- intent: explain_server_is_down
+  examples: |
+    - explain server is down
+    - server one
+    - server
+    - server is down
+- intent: teamviewer_at_home
+  examples: |
+    - can I use TeamViewer at home?
+    - can I install Teamviewer on my own computer?
+    - I would like to use my personal computer to remote to my workstation
+    - how do I use teamviewer on my pc
+
+- intent: app_is_blocked
+  examples: |
+    - "This app has been blocked by your system administrator"
+    - app is blocked
+    - program is blocked
+    - system is blocked
+    - can't install a software
+    - can't open a program 
+    
+    
+
+
+
+    
+

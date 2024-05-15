@@ -1,0 +1,112 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - account_locked
+  - internet_not_working
+  - internet_not_working_alternative
+  - not_working
+  - nothing
+  - connect_to_wifi
+  - how_to_open_timesheet
+  - teamviewer_cannot_connect
+  - teamviewer_cannot_signin
+  - teamviewer_wrong_password
+  - thanks
+  - teamviewer_is_starting_please_wait
+  - website_is_blocked
+  - explain_firewall
+  - explain_browser_security
+  - explain_server_is_down
+  - teamviewer_at_home
+  - app_is_blocked
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "/images/universe.png"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, would you like me to help you with something related TMDTC?"
+
+  utter_goodbye:
+  - text: "See you later. Have a nice day? <3"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_account_locked:
+  - text: "When your account is locked, it usually unlocks itself around 15 minutes, please do not attempt anymore as this will restart the counter"
+  utter_offer_help:
+  - text: "If your account does not unlock itself after 30 mins please inform IT so they can email ITSERVICEDESK"
+  utter_internet_not_working:
+  - text: "If your Internet is not working please try unplugging and plugging back the ethernet cable."
+  utter_internet_not_working_alternative:
+  - text: "If that does not help. Try using WiFi in the meantime and report this issue to Jaison John on Teams"
+  utter_nothing:
+  - text: "I am sorry that it did not work, can you be more specific and I'll try my best to help you"
+  utter_connect_to_wifi:
+  - text: "To Connect to the TMUK WiFi you can use your domain / Windows credentials to gain access. Alternatively you can use Warwick Guest's Wifi (free for everyone)"
+  utter_how_to_open_timesheet:
+  - text: "Look for TMETC NAIC Resource Management System. It'll look something like this:"
+    image: "/images/timesheet_icon.png"
+  utter_time_sheet_login_page:
+  - text: "This is what the main page looks like, Type your login details (name.surname, timesheet password)"
+    image: "/images/timesheet_main_page.png"
+  utter_teamviewer_cannot_connect:
+  - text: "If you can't connect to your remote workstation the best thing to do is to restart your laptop as Teamviewer sometimes gets bugged."
+  utter_teamviewer_cannot_signin:
+  - text: "In order to sign in you need your email address and TeamViewer password (usually Hello123456). Please try that and let me know if it works!"
+  utter_teamviewer_wrong_password:
+  - text: "If the default password is not working and you don't know the password. you can change your password by providing your email. You can also contact IT so they change it from the console :) "
+  utter_thanks:
+  - text: "No worries :) .My purpose is to help you, let me know if you have more questions regarding TMDTC"
+  utter_teamviewer_is_starting_please_wait:
+  - text: "There are 3 fixes for: 'TeamViewer is starting - Please wait'.
+           1- restart your laptop
+           2- connect to the vpn(Global Protect) this is due to the firewall settings
+           3- reinstall Teamviewer
+           Let me know if that fixes your issue :)"
+  utter_website_is_blocked:
+  - text: "
+      The possible reasons why your website is not coming up: 
+      1. Firewall. 
+      2. Browser security.
+      3. Server is down.
+      Let me know which one you'd like me to explain :)"
+  utter_explain_firewall:
+  - text: "A firewall is a network security feature that monitors network traffic.
+            Based on the pre-determined security rules.
+            Your website could be blocked in these security rules. 
+            Not to worry, if the website is safe you can try it on a public network/Wi-Fi ;
+          "
+  utter_explain_browser_security:
+  - text: "Browsers have security features which protect users from malicious websites. If a URL is flagged as potentially harmful, the browser may block access to it.
+  However you can still access the website sometimes if the browser allows you to :)
+            
+  "
+  utter_explain_server_is_down:
+  - text: "When a server is down. There could be different reasons; network, services, software. etc. When this happens communication between the client and the server stops."
+  utter_teamviewer_at_home:
+  - text: "You can use Teamviewer at home using your Teamviewer credentials (email and password), via website or via the app if you install it on your device (select, normal and commercial use)."
+  utter_app_is_blocked:
+  - text: "you have a few options when your app is blocked. \n
+          1. if your trying to open a file with that app you can try using another app.
+          2. if you specifically want app to be opened you can request IT for admin credentials.
+          3. find a work around. sometimes apps can't be run even with admin credentials. \n
+          Good luck :)
+  "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

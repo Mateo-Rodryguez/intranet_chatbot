@@ -1,0 +1,124 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Account locked 
+  steps:
+  - intent: account_locked
+  - action: utter_account_locked
+  - action: utter_offer_help
+
+- story: internet not working
+  steps:
+  - intent: internet_not_working
+  - action: utter_internet_not_working
+
+  #story: handle_issue
+  #steps:
+  #- intent: not_working
+  #- action: utter_second_utterance
+
+- story: internet still not working
+  steps:
+  - intent: internet_not_working_alternative
+  - action: utter_internet_not_working_alternative
+ 
+- story: No result
+  steps:
+  - intent: nothing
+  - intent: not_working
+  - action: utter_nothing
+
+- story: Connect to wifi
+  steps:
+  - intent: connect_to_wifi
+  - action: utter_connect_to_wifi
+- story: Open Timesheet
+  steps:
+  - intent: how_to_open_timesheet
+  - action: utter_how_to_open_timesheet
+  - action: utter_time_sheet_login_page
+
+- story: teamviewer can't connect
+  steps:
+  - intent: teamviewer_cannot_connect
+  - action: utter_teamviewer_cannot_connect
+- story: teamviewer can't sign in
+  steps:
+  - intent: teamviewer_cannot_signin
+  - action: utter_teamviewer_cannot_signin
+- story: teamviewer password is wrong
+  steps:
+  - intent: teamviewer_wrong_password
+  - action: utter_teamviewer_wrong_password
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: teamviewer is not starting
+  steps:
+  - intent: teamviewer_is_starting_please_wait
+  - action: utter_teamviewer_is_starting_please_wait
+
+- story: website is blocked
+  steps:
+  - intent: website_is_blocked
+  - action: utter_website_is_blocked
+  - intent: explain_firewall
+  - action: utter_explain_firewall
+
+- story: website is blocked 2
+  steps:
+  - intent: website_is_blocked
+  - action: utter_website_is_blocked
+  - intent: explain_browser_security
+  - action: utter_explain_browser_security
+
+
+- story: website is blocked 3
+  steps:
+  - intent: website_is_blocked
+  - action: utter_website_is_blocked
+  - intent: explain_server_is_down
+  - action: utter_explain_server_is_down
+
+- story: how to use teamviewer at home
+  steps:
+  - intent: teamviewer_at_home
+  - action: utter_teamviewer_at_home
+
+- story: cannot open an app
+  steps:
+  - intent: app_is_blocked
+  - action: utter_app_is_blocked
+
+
+
